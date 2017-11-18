@@ -5,30 +5,34 @@
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-wifi-config \
-	gluon-web-network \
-	gluon-mesh-vpn-tunneldigger \
-	gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	gluon-tunneldigger-watchdog \
-	haveged \
-	iptables \
-	iwinfo \
-	gluon-authorized-keys 
+        gluon-mesh-batman-adv-15 \
+        gluon-respondd \
+        gluon-autoupdater \
+        gluon-config-mode-autoupdater \
+        gluon-config-mode-contact-info \
+        gluon-config-mode-core \
+        gluon-config-mode-geo-location \
+        gluon-config-mode-hostname \
+        gluon-config-mode-mesh-vpn \
+        gluon-ebtables-filter-multicast \
+        gluon-ebtables-filter-ra-dhcp \
+        gluon-ebtables-source-filter \
+        respondd-module-airtime \
+        gluon-web-admin \
+        gluon-web-autoupdater \
+        gluon-web-wifi-config \
+        gluon-web-network \
+        gluon-mesh-vpn-tunneldigger \
+        gluon-radvd \
+        gluon-setup-mode \
+        gluon-status-page \
+        gluon-tunneldigger-watchdog \
+        haveged \
+        iptables \
+        iwinfo \
+        gluon-web-private-wifi \
+        gluon-authorized-keys 
+
 
 
 # basic support for USB stack
