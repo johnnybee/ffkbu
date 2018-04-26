@@ -22,17 +22,17 @@ GLUON_SITE_PACKAGES := \
         gluon-web-autoupdater \
         gluon-web-wifi-config \
         gluon-web-network \
-        gluon-mesh-vpn-tunneldigger \
-        gluon-radvd \
+        gluon-mesh-vpn-fastd \
         gluon-setup-mode \
         gluon-status-page \
-        gluon-tunneldigger-watchdog \
         haveged \
         iptables \
         iwinfo \
         gluon-web-private-wifi \
         gluon-authorized-keys 
 
+#       gluon-radvd \
+#       gluon-tunneldigger-watchdog \
 
 
 # basic support for USB stack
@@ -105,7 +105,8 @@ PCI_PACKAGES_NET := \
 	kmod-sky2 \
 	kmod-tg3 \
 	kmod-tulip \
-	kmod-via-rhine
+	kmod-via-rhine \ 
+	kmod-8139cp
 # broken
 #	kmod-ixgbe \
 #	kmod-r8139too \
@@ -177,7 +178,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #		to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2017.1.1-JohnnyBee
+DEFAULT_GLUON_RELEASE := v2017.1.6-JohnnyBee
 
 
 ##	GLUON_RELEASE
@@ -188,7 +189,7 @@ DEFAULT_GLUON_RELEASE := v2017.1.1-JohnnyBee
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2017.1.1-JohnnyBee
+GLUON_RELEASE ?= v2017.1.6-JohnnyBee
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
