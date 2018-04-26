@@ -105,9 +105,9 @@ PCI_PACKAGES_NET := \
 	kmod-sky2 \
 	kmod-tg3 \
 	kmod-tulip \
-	kmod-via-rhine \ 
-	kmod-8139cp
+	kmod-via-rhine 
 # broken
+#	kmod-8139cp \
 #	kmod-ixgbe \
 #	kmod-r8139too \
 # additional packages
