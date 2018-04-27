@@ -29,8 +29,8 @@ GLUON_SITE_PACKAGES := \
         iptables \
         iwinfo \
         gluon-web-private-wifi \
-        gluon-authorized-keys 
-
+        gluon-authorized-keys  \
+	gluon-radvd
 #       gluon-radvd \
 #       gluon-tunneldigger-watchdog \
 
