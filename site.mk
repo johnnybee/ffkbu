@@ -16,23 +16,31 @@ GLUON_SITE_PACKAGES := \
         gluon-config-mode-mesh-vpn \
         gluon-ebtables-filter-multicast \
         gluon-ebtables-source-filter \
-        gluon-ebtables-filter-ra-dhcp \
         respondd-module-airtime \
         gluon-web-admin \
         gluon-web-autoupdater \
         gluon-web-wifi-config \
         gluon-web-network \
-        gluon-mesh-vpn-fastd \
         gluon-setup-mode \
         gluon-status-page \
         haveged \
         iptables \
         iwinfo \
+        gluon-radvd \
         gluon-web-private-wifi \
-        gluon-radvd
+        gluon-mesh-vpn-fastd
 
-#        gluon-authorized-keys \
-#       gluon-radvd \
+
+##RA-DHCP
+##      gluon-ebtables-filter-ra-dhcp \
+
+
+#Wireguard
+##      gluon-mesh-vpn-wireguard
+
+
+
+#       gluon-authorized-keys \
 #       gluon-tunneldigger-watchdog \
 
 
@@ -160,6 +168,7 @@ TOOLS_PACKAGES := \
 # broken
 #       pciutils \
 #
+#
 # $(GLUON_TARGET) specific settings:
 #
 
@@ -190,7 +199,6 @@ GLUON_SITE_PACKAGES += \
         $(PCI_PACKAGES_NET) \
         $(TOOLS_PACKAGES)
 endif
-
 ifeq ($(GLUON_TARGET),x86-kvm_guest)
 GLUON_SITE_PACKAGES += \
         $(TOOLS_PACKAGES)
@@ -218,7 +226,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2017.1.7-JohnnyBee
+DEFAULT_GLUON_RELEASE := v2017.1.8-JohnnyBee
 
 
 ##      GLUON_RELEASE
@@ -229,7 +237,7 @@ DEFAULT_GLUON_RELEASE := v2017.1.7-JohnnyBee
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2017.1.7-JohnnyBee
+GLUON_RELEASE ?= v2017.1.8-JohnnyBee
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
