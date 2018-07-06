@@ -3,6 +3,8 @@
 #
 # In most cases, it is not required so don't add it.
 
-GLUON_SITE_FEEDS="wg_kbu"
-PACKAGES_WG_KBU_REPO=https://github.com/johnnybee/package-gluon-mesh-vpn-wireguard.git
-PACKAGES_WG_KBU_COMMIT=438710805bcea779359c1c624e938e70bd152493
+GLUON_SITE_FEEDS="wgkbu"
+PACKAGES_WGKBU_REPO=https://github.com/johnnybee/gluon-mesh-vpn-wireguard.git
+PACKAGES_WGKBU_COMMIT=c6b2e1cc8696c6511a2da354ccab3f44cf560802
+PACKAGES_WGKBU_BRANCH=master
+
