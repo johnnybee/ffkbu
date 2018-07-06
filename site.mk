@@ -13,9 +13,9 @@ GLUON_SITE_PACKAGES := \
         gluon-config-mode-core \
         gluon-config-mode-geo-location \
         gluon-config-mode-hostname \
-        gluon-config-mode-mesh-vpn \
         gluon-ebtables-filter-multicast \
         gluon-ebtables-source-filter \
+        gluon-ebtables-filter-ra-dhcp \
         respondd-module-airtime \
         gluon-web-admin \
         gluon-web-autoupdater \
@@ -27,21 +27,16 @@ GLUON_SITE_PACKAGES := \
         iptables \
         iwinfo \
         gluon-radvd \
-        gluon-web-private-wifi \
-        gluon-mesh-vpn-fastd
+  
+#Please use packages according the usage of fastd or wireguard
+## Fastd
+##        gluon-config-mode-mesh-vpn \ 
+##        gluon-mesh-vpn-fastd \
 
+## Wireguard
+##        gluon-mesh-vpn-wireguard \
 
-##RA-DHCP
-##      gluon-ebtables-filter-ra-dhcp \
-
-
-#Wireguard
-##      gluon-mesh-vpn-wireguard
-
-
-
-#       gluon-authorized-keys \
-#       gluon-tunneldigger-watchdog \
+      gluon-web-private-wifi 
 
 
 
