@@ -10,12 +10,15 @@
 
   -- Prefixes used within the mesh. Both are required.
  prefix4 = '10.70.0.0/16',
-  -- This prefix is only for the next node feature!
   prefix6 = 'fdff::/64',
 
   -- Timezone of your community.
   -- See http://wiki.openwrt.org/doc/uci/system#time_zones
   timezone = 'CET-1CEST,M3.5.0,M10.5.0/3',
+
+  -- Domain Seed
+  domain_seed = '22ddc6a6ae620ac6573ee7525852a90e53375259fcbba98c1bf9c020a4df361a',
+
 
   -- List of NTP servers in your community.
   -- Must be reachable using IPv6!
@@ -44,7 +47,6 @@
     mcast_rate = 12000,
   },
 },
-
   -- Wireless configuration for 5 GHz interfaces.
   -- This should be equal to the 2.4 GHz variant, except
   -- for channel and htmode.
@@ -65,7 +67,7 @@
   -- The next node feature allows clients to always reach the node it is
   -- connected to using a known IP address.
   next_node = {
-    name= 'nextnode',
+    name= { 'nextnode', 'nextnode.kbu.local' },
     -- anycast IPs of all nodes
     -- ip4 = '10.70.0.255',
     -- ip6 = 'fdd3:5d16:b5dd:fd39::fd39',
@@ -76,6 +78,8 @@
   },
 
         mesh = {
+        vxlan = true,
+
         batman_adv = {
       -- Gateway selection class (optional)
       -- The default class 20 is based on the link quality (TQ) only,
@@ -84,6 +88,7 @@
       routing_algo = 'BATMAN_IV',
         },
         },
+
 --      dns = {
 --              cacheentries=4096,
 --              servers = {
@@ -91,19 +96,14 @@
 --                      'fdd3:5d18:b5dd:fc00::3',
 --              },
 --      },
-
-
-
   -- Refer to http://fastd.readthedocs.org/en/latest/ to better understand
   -- what these options do.
+
   mesh_vpn = {
--- fastd
---          mtu = 1398,
--- wireguard
         mtu = 1420,
         wireguard = {
                 enabled = '1',
-                iface = 'wg0',
+                iface = 'mesh-vpn',
                 iprange = '10.3', --must be a /16!!
                 limit = '1', -- actually unused
                 peers = {
@@ -121,8 +121,6 @@
                         },
         },
 
-
-
         bandwidth_limit = {
                 -- The bandwidth limit can be enabled by default here.
                 enabled = false,
@@ -132,7 +130,7 @@
                 ingress = 3000,
                 },
   },
-  
+
   autoupdater = {
     -- Default branch. Don't forget to set GLUON_BRANCH when building!
     branch = 'stable',
@@ -162,7 +160,7 @@
       },
     },
   },
-  
+
   -- Node roles
   -- roles = {
   --   default = 'node',
@@ -174,24 +172,26 @@
   --   },
   -- },
 
-  --authorized_keys = {
-  --             ''
-  --      },
+--  authorized_keys = {
+--                '',
+--        },
 
   opkg = {
-  --      openwrt = 'http://ftp.stw-bonn.de/pub/openwrt/%n/%v/%S/packages',
+ --     openwrt = 'http://ftp.stw-bonn.de/pub/openwrt/%n/%v/%S/packages',
         extra = {
                 modules = 'http://[fdd3:5d18:b5dd:fc00:2000::1]/modules/bonn/stable/gluon-ffkbu-%GR/%S',
                 },
   },
 
-  ---https://forum.freifunk.net/t/opkg-update-schmeisst-fehler-raus/10491
-
-  -- Skip setup mode (config mode) on first boot
+-- Skip setup mode (config mode) on first boot
   setup_mode = {
     skip = true,
     },
   config_mode = {
+  remote_login = {
+    show_password_form = true,
+    min_password_length = 8,
+  },
     geo_location = {
       show_altitude = false,
     },
