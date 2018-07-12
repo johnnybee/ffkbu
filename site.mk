@@ -31,11 +31,11 @@ GLUON_SITE_PACKAGES := \
   
 #Please use packages according the usage of fastd or wireguard.
 ## Fastd
-##        gluon-config-mode-mesh-vpn \ 
-##        gluon-mesh-vpn-fastd 
+##      gluon-config-mode-mesh-vpn \ 
+##      gluon-mesh-vpn-fastd 
 
 ## Wireguard
-##        gluon-mesh-vpn-wireguard 
+##      gluon-mesh-vpn-wireguard 
 
 
 
