@@ -222,7 +222,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2017.1.8-JohnnyBee
+DEFAULT_GLUON_RELEASE := v2018.1-JohnnyBee
 
 
 ##      GLUON_RELEASE
@@ -233,7 +233,7 @@ DEFAULT_GLUON_RELEASE := v2017.1.8-JohnnyBee
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2017.1.8-JohnnyBee
+GLUON_RELEASE ?= v2018.1-JohnnyBee
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
