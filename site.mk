@@ -26,7 +26,6 @@ GLUON_SITE_PACKAGES := \
         iptables \
         iwinfo \
         gluon-web-private-wifi \
-        gluon-authorized-keys \
         gluon-ffkbu-files \
   
 #Please use packages according the usage of fastd or wireguard.
