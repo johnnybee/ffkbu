@@ -27,18 +27,8 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-web-private-wifi \
         gluon-ffkbu-files \
-  
-#Please use packages according the usage of fastd or wireguard.
-## Fastd
-##      gluon-config-mode-mesh-vpn \ 
-##      gluon-mesh-vpn-fastd 
-
-## Wireguard
-##      gluon-mesh-vpn-wireguard 
-
-
-
-
+        gluon-config-mode-mesh-vpn \ 
+        gluon-mesh-vpn-fastd 
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
@@ -221,7 +211,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2018.1-JohnnyBee
+DEFAULT_GLUON_RELEASE := v2018.1-fastd
 
 
 ##      GLUON_RELEASE
@@ -232,7 +222,7 @@ DEFAULT_GLUON_RELEASE := v2018.1-JohnnyBee
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2018.1-JohnnyBee
+GLUON_RELEASE ?= v2018.1-fastd
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
