@@ -106,16 +106,15 @@
                 iface = 'mesh-vpn',
                 iprange = '10.3', --must be a /16!!
                 limit = '1', -- actually unused
+                gretapip = '10.3.0.2',
                 peers = {
                                 {
                                         publickey ='MwgDvHjM9GuBCeySqbcbhu2hrYaB5hkMA35OZKz0inM=',
                                         endpoint ='bonn2.kbu.freifunk.net:10020',
-                                        gretapip = '10.3.0.2',
                                 },
                                 {
                                         publickey ='qUc5N5GH5b4e/Io8WiL2O3rcK7toDSDbUMUE8GHtBCg=',
                                         endpoint ='bonn3.kbu.freifunk.net:10020',
-                                        gretapip = '10.3.0.3',
                                 },
 
                         },
