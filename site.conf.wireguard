@@ -141,8 +141,8 @@
 
         -- List of mirrors to fetch images from. IPv6 required!
         mirrors = {
-                'http://[fdd3:5d18:b5dd:fc00:2000::1]/autoupdater/bonn/stable/sysupgrade',
-                'http://[fdd3:5d18:b5dd:fc00:3000::1]/autoupdater/bonn/stable/sysupgrade',
+                'http://[fdd3:5d18:b5dd:fc00:2000::1]/autoupdater/bonn/stable/wireguard/sysupgrade',
+                'http://[fdd3:5d18:b5dd:fc00:3000::1]/autoupdater/bonn/stable/wireguard/sysupgrade',
 
         },
 
@@ -176,9 +176,8 @@
 --        },
 
   opkg = {
- --     openwrt = 'http://ftp.stw-bonn.de/pub/openwrt/%n/%v/%S/packages',
         extra = {
-                modules = 'http://[fdd3:5d18:b5dd:fc00:2000::1]/modules/bonn/stable/gluon-ffkbu-%GR/%S',
+                modules = 'http://[fdd3:5d18:b5dd:fc00:2000::1]/modules/bonn/stable/wireguard/gluon-ffkbu-%GR/%S',
                 },
   },
 
