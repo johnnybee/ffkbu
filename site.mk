@@ -27,8 +27,8 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-web-private-wifi \
         gluon-ffkbu-files \
-        gluon-config-mode-mesh-vpn \ 
-        gluon-mesh-vpn-fastd 
+        gluon-config-mode-mesh-vpn \
+        gluon-mesh-vpn-fastd
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
