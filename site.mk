@@ -27,11 +27,7 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-web-private-wifi \
         gluon-ffkbu-files \
-        gluon-mesh-vpn-wireguard 
-
-
-
-
+        gluon-mesh-vpn-wireguard
 
 # add offline ssid only if the target has wifi device
 ifeq ($(GLUON_TARGET),ar71xx-generic)
