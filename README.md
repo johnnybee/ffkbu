@@ -14,7 +14,7 @@ You could use Wireguard only for devices with __more__ than 4Mb of RAM! That mea
 ## Build Instructions
 
 1. Go in your build system with the user you want to build
-2. Download Gluon 2018.1. You'll find the informations you'll need under the URL https://gluon.readthedocs.io/en/v2018.1.x/user/getting_started.html
+2. Download Gluon 2018.1.1. You'll find the informations you'll need under the URL https://gluon.readthedocs.io/en/v2018.1.x/user/getting_started.html
 3. Create a directory *site* in your firmware-directory.
 4. Download this git in the directory *site*
 5. Rename *site.conf.fastd* or *site.conf.wireguard* to *site.conf*
