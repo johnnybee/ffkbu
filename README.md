@@ -5,7 +5,7 @@ FF Hood Bonn mit Batman15 und 802.11s
 This is the stable site for Gluon 2018.1 with wireguard.
 
 __Please remember:
-You could use Wireguard only for devices with more than 4Mb of RAM! That means, that f.e. the 841er can only connect to the mesh with fastd!__
+You could use Wireguard only for devices with more than 4Mb of Flash! That means, that f.e. the 841er can only connect to the mesh with fastd!__
 
 
 ## Build Instructions
