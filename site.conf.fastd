@@ -181,9 +181,7 @@
 
         -- List of mirrors to fetch images from. IPv6 required!
         mirrors = {
-                'http://[fdd3:5d18:b5dd:fc00:2000::1]/autoupdater/bonn/stable/fastd/sysupgrade',
-                'http://[fdd3:5d18:b5dd:fc00:3000::1]/autoupdater/bonn/stable/fastd/sysupgrade',
-
+                'http://[fdd3:5d18:b5dd:fc00::1]/autoupdater/bonn/stable/fastd/sysupgrade',
         },
 
         -- Number of good signatures required.
@@ -222,7 +220,7 @@
   opkg = {
  --     openwrt = 'http://ftp.stw-bonn.de/pub/openwrt/%n/%v/%S/packages',
         extra = {
-                modules = 'http://[fdd3:5d18:b5dd:fc00:2000::1]/modules/bonn/stable/fastd/gluon-ffkbu-%GR/%S',
+                modules = 'http://[fdd3:5d18:b5dd:fc00::1]]/modules/bonn/stable/gluon-ffkbu-%GR/%S',
                 },
   },
 
