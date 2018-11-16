@@ -142,7 +142,6 @@
         -- List of mirrors to fetch images from. IPv6 required!
         mirrors = {
                 'http://[fdd3:5d18:b5dd:fc00::1]/autoupdater/bonn/stable/wireguard/sysupgrade',
-                'http://[fdd3:5d18:b5dd:fc00::1]/autoupdater/bonn/stable/wireguard/sysupgrade',
 
         },
 
