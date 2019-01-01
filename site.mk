@@ -14,7 +14,6 @@ GLUON_SITE_PACKAGES := \
         gluon-config-mode-hostname \
         gluon-config-mode-core \
         gluon-ebtables-filter-multicast \
-        gluon-ebtables-limit-arp \
         gluon-radv-filterd \
         respondd-module-airtime \
         gluon-web-admin \
