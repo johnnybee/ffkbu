@@ -21,6 +21,7 @@ GLUON_SITE_PACKAGES := \
         gluon-web-wifi-config \
         gluon-web-network \
         gluon-status-page \
+        gluon-config-mode-geo-location-osm \
         haveged \
         iptables \
         iwinfo \
@@ -220,7 +221,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2018.2
+DEFAULT_GLUON_RELEASE := v2018.2.1
 
 
 ##      GLUON_RELEASE
@@ -231,7 +232,7 @@ DEFAULT_GLUON_RELEASE := v2018.2
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2018.2
+GLUON_RELEASE ?= v2018.2.1
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
