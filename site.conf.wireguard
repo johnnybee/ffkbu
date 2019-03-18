@@ -187,6 +187,15 @@
   setup_mode = {
     skip = true,
     },
+  geo_location = {
+     osm = {
+      center = {
+        lat = 50.729501501,
+        lon = 7.027130127,
+      },
+      zoom = 13,
+    },
+  },
   config_mode = {
   remote_login = {
     show_password_form = true,
