@@ -1,5 +1,9 @@
 ##      gluon site.mk makefile example
 
+##	GLUON_FEATURES
+#		Specify Gluon features/packages to enable;
+#		Gluon will automatically enable a set of packages
+#		depending on the combination of features listed
 ##      GLUON_SITE_PACKAGES
 #               specify gluon/openwrt packages to include here
 #               The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
@@ -7,16 +11,16 @@
 GLUON_FEATURES := \
         autoupdater \
         config-mode-geo-location-osm \   
-       	ebtables-filter-multicast \
-	ebtables-filter-ra-dhcp \
-	ebtables-limit-arp \
-	mesh-batman-adv-15 \        
-	respondd \
+        ebtables-filter-multicast \
+        ebtables-filter-ra-dhcp \
+        ebtables-limit-arp \
+        mesh-batman-adv-15 \        
+        respondd \
         setup-mode \
-	status-page \
-	web-advanced \
+        status-page \
+        web-advanced \
         web-private-wifi \
-	web-wizard
+        web-wizard
          
 GLUON_SITE_PACKAGES := \
         gluon-web-autoupdater \
