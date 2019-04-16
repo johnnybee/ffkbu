@@ -4,28 +4,26 @@
 #               specify gluon/openwrt packages to include here
 #               The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
+GLUON_FEATURES := \
+        autoupdater \
+        config-mode-geo-location-osm \   
+       	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	ebtables-limit-arp \
+	mesh-batman-adv-15 \        
+	respondd \
+        setup-mode \
+	status-page \
+	web-advanced \
+        web-private-wifi \
+	web-wizard
+         
 GLUON_SITE_PACKAGES := \
-        gluon-mesh-batman-adv-15 \
-        gluon-respondd \
-        gluon-autoupdater \
-        gluon-config-mode-autoupdater \
-        gluon-config-mode-contact-info \
-        gluon-config-mode-geo-location \
-        gluon-config-mode-hostname \
-        gluon-config-mode-core \
-        gluon-ebtables-filter-multicast \
-        gluon-radv-filterd \
-        respondd-module-airtime \
-        gluon-web-admin \
         gluon-web-autoupdater \
-        gluon-web-wifi-config \
-        gluon-web-network \
-        gluon-status-page \
-        gluon-config-mode-geo-location-osm \
         haveged \
         iptables \
         iwinfo \
-        gluon-web-private-wifi \
+        respondd-module-airtime \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
 
