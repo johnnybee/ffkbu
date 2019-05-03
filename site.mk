@@ -14,7 +14,7 @@ GLUON_FEATURES := \
         ebtables-filter-multicast \
         ebtables-filter-ra-dhcp \
         ebtables-limit-arp \
-        mesh-batman-adv-15 \        
+        mesh-batman-adv-15 \
         respondd \
         setup-mode \
         status-page \
