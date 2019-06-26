@@ -25,7 +25,6 @@ GLUON_SITE_PACKAGES := \
         haveged \
         iptables \
         iwinfo \
-        respondd-module-airtime \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
 
