@@ -4,70 +4,25 @@
 #               specify gluon/openwrt packages to include here
 #               The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
+GLUON_FEATURES := \
+        autoupdater \
+        ebtables-filter-multicast \
+        ebtables-filter-ra-dhcp \
+        ebtables-limit-arp \
+        mesh-batman-adv-15 \
+        mesh-vpn-fastd \
+        respondd \
+        status-page \
+        web-advanced \
+        web-private-wifi \
+        web-wizard
+        
 GLUON_SITE_PACKAGES := \
-        gluon-mesh-batman-adv-15 \
-        gluon-respondd \
-        gluon-autoupdater \
-        gluon-config-mode-autoupdater \
-        gluon-config-mode-contact-info \
-        gluon-config-mode-geo-location \
-        gluon-config-mode-hostname \
-        gluon-config-mode-core \
-        gluon-ebtables-filter-multicast \
-        gluon-radv-filterd \
-        respondd-module-airtime \
-        gluon-web-admin \
-        gluon-web-autoupdater \
-        gluon-web-wifi-config \
-        gluon-web-network \
-        gluon-status-page \
-        gluon-config-mode-geo-location-osm \
         haveged \
         iptables \
         iwinfo \
-        gluon-web-private-wifi \
-        gluon-ffkbu-files \
-        gluon-config-mode-mesh-vpn \
-        gluon-mesh-vpn-fastd
-
-# add offline ssid only if the target has wifi device
-ifeq ($(GLUON_TARGET),ar71xx-generic)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-mikrotik)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-nand)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),mpc85xx-generic)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-rt305x)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-mt7621)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-
-
+        gluon-ffkbu-files 
+        
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
         kmod-usb-core \
@@ -211,7 +166,7 @@ GLUON_TLWDR4900_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKAGES) $(USB_P
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2018.2.1-FastD
+DEFAULT_GLUON_RELEASE := v2018.2.2-FastD
 
 
 ##      GLUON_RELEASE
@@ -222,7 +177,7 @@ DEFAULT_GLUON_RELEASE := v2018.2.1-FastD
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2018.2.1-FastD
+GLUON_RELEASE ?= v2018.2.2-FastD
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
