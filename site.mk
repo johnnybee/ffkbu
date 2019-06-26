@@ -16,91 +16,18 @@ GLUON_FEATURES := \
         ebtables-limit-arp \
         mesh-batman-adv-15 \
         respondd \
-        setup-mode \
         status-page \
         web-advanced \
         web-private-wifi \
         web-wizard
          
 GLUON_SITE_PACKAGES := \
-        gluon-web-autoupdater \
         haveged \
         iptables \
         iwinfo \
         respondd-module-airtime \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
-
-# add offline ssid only if the target has wifi device
-ifeq ($(GLUON_TARGET),ar71xx-generic)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-tiny)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-mikrotik)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ar71xx-nand)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),mpc85xx-generic)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),brcm2708-bcm2709)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-rt305x)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-mt7620)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-mt7621)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ramips-mt7628)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),ipq806x)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),mpc85xx-generic)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
-
-ifeq ($(GLUON_TARGET),sunxi)
-GLUON_SITE_PACKAGES += \
-#       gluon-ssid-changer
-endif
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
@@ -255,7 +182,7 @@ GLUON_tp-link-tl-wdr4900-v1_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKA
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2018.2.1-Wireguard
+DEFAULT_GLUON_RELEASE := v2018.2.2-Wireguard
 
 
 ##      GLUON_RELEASE
@@ -266,7 +193,7 @@ DEFAULT_GLUON_RELEASE := v2018.2.1-Wireguard
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2018.2.1-Wireguard
+GLUON_RELEASE ?= v2018.2.2-Wireguard
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
