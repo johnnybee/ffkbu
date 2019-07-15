@@ -5,7 +5,7 @@
 
 GLUON_SITE_FEEDS="wgkbu fileskbu"
 PACKAGES_WGKBU_REPO=https://github.com/johnnybee/gluon-mesh-vpn-wireguard.git
-PACKAGES_WGKBU_COMMIT=ff0f019f45135bc0d0e19233d7dfa775d4b659aa
+PACKAGES_WGKBU_COMMIT=dc4206576f48fc76f2f143bf0c1e2b3e4670874d
 PACKAGES_WGKBU_BRANCH=master
 
 PACKAGES_FILESKBU_REPO=https://github.com/johnnybee/gluon-ffkbu-files.git
