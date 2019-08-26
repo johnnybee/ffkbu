@@ -1,11 +1,8 @@
 # ffkbu
-FF Hood Bonn mit Batman15 und 802.11s
+FF Hood Bonn with Batman15 and 802.11s.
 
 
 This is the stable site for Gluon 2018.2.2 with fastd.
-
-__Please remember:
-You could use Wireguard only for devices with more than 4Mb of Flash! That means, that f.e. the 841er can only connect to the mesh with fastd!__
 
 
 ## Build Instructions
