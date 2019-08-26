@@ -1,5 +1,5 @@
 # ffkbu
-FF Hood Bonn mit Batman15 und 802.11s
+FF Hood Bonn with Batman15 and 802.11s
 
 
 This is the stable site for Gluon 2018.2.2 with wireguard.
