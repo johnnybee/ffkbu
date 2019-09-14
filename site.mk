@@ -181,7 +181,7 @@ GLUON_tp-link-tl-wdr4900-v1_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKA
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2018.2.2-Wireguard
+DEFAULT_GLUON_RELEASE := v2018.2.3-Wireguard
 
 
 ##      GLUON_RELEASE
