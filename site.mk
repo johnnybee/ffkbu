@@ -27,6 +27,8 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
+        
+GLUON_DEPRECATED=full
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
