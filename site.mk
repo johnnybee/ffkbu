@@ -23,6 +23,8 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         gluon-ffkbu-files 
         
+GLUON_DEPRECATED=full
+
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
         kmod-usb-core \
