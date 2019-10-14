@@ -17,6 +17,7 @@ GLUON_FEATURES := \
         mesh-batman-adv-15 \
         respondd \
         status-page \
+        zram-swap \
         web-advanced \
         web-private-wifi \
         web-wizard
