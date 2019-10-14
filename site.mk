@@ -14,6 +14,7 @@ GLUON_FEATURES := \
         respondd \
         status-page \
         web-advanced \
+        zram-swap \
         web-private-wifi \
         web-wizard
         
