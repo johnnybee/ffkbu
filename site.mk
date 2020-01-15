@@ -14,13 +14,13 @@ GLUON_FEATURES := \
         respondd \
         status-page \
         web-advanced \
-        zram-swap \
         web-private-wifi \
         web-wizard
         
 GLUON_SITE_PACKAGES := \
         haveged \
         iptables \
+        zram-swap \
         iwinfo \
         gluon-ffkbu-files 
         
