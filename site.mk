@@ -17,7 +17,6 @@ GLUON_FEATURES := \
         mesh-batman-adv-15 \
         respondd \
         status-page \
-        zram-swap \
         web-advanced \
         web-private-wifi \
         web-wizard
@@ -25,6 +24,7 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES := \
         haveged \
         iptables \
+        zram-swap \
         iwinfo \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
