@@ -15,7 +15,8 @@ GLUON_FEATURES := \
         status-page \
         web-advanced \
         web-private-wifi \
-        web-wizard
+        web-wizard \
+        config-mode-geo-location-osm
         
 GLUON_SITE_PACKAGES := \
         haveged \
