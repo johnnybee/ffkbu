@@ -24,7 +24,6 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES := \
         haveged \
         iptables \
-        zram-swap \
         iwinfo \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
