@@ -24,7 +24,6 @@ GLUON_FEATURES := \
 GLUON_SITE_PACKAGES := \
         haveged \
         iptables \
-        zram-swap \
         iwinfo \
         gluon-ffkbu-files \
         gluon-mesh-vpn-wireguard
@@ -184,7 +183,7 @@ GLUON_tp-link-tl-wdr4900-v1_SITE_PACKAGES := $(USB_PACKAGES_BASIC) $(TOOLS_PACKA
 #               to decide if a version is newer or not.
 
 #DEFAULT_GLUON_RELEASE := 0.6+mstr$(shell date '+%Y%m%d')
-DEFAULT_GLUON_RELEASE := v2019.1.1-Wireguard
+DEFAULT_GLUON_RELEASE := v2020.1.1-Wireguard
 
 
 ##      GLUON_RELEASE
@@ -195,7 +194,7 @@ DEFAULT_GLUON_RELEASE := v2019.1.1-Wireguard
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2019.1.1-Wireguard
+GLUON_RELEASE ?= v2020.1.1-Wireguard
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
