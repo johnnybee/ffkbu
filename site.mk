@@ -194,7 +194,7 @@ DEFAULT_GLUON_RELEASE := v2020.1.1-Wireguard
 #                       gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= v2020.1.1-Wireguard
+GLUON_RELEASE ?= v2020.1.2-Wireguard
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
