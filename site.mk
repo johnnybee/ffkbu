@@ -16,7 +16,8 @@ GLUON_FEATURES := \
         web-advanced \
         web-private-wifi \
         web-wizard \
-        config-mode-geo-location-osm
+        config-mode-geo-location-osm \
+        wireless-encryption-wpa3
         
 GLUON_SITE_PACKAGES := \
         haveged \
