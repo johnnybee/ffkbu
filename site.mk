@@ -19,7 +19,8 @@ GLUON_FEATURES := \
         status-page \
         web-advanced \
         web-private-wifi \
-        web-wizard
+        web-wizard \
+        wireless-encryption-wpa3
          
 GLUON_SITE_PACKAGES := \
         haveged \
